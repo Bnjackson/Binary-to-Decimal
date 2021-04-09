@@ -20,9 +20,17 @@
     <main>
         <section class="converter-section"> 
             <div class="converter-container">
-                <div>
-                    
-                </div>
+                <form id="calcForm" name="calcForm" autocomplete="off">
+                    <div class="form-group">
+                        <label class="input-label" for="binary">Enter Binary Number</label>
+                        <input type="number" id="input" name="input">
+                    </div>
+                    <div class="form-group">
+                        <button id="convert-button" type="button"><span>= Convert</span></button>
+                        <button id="reset-button" type="reset"><span>x Reset</span></button>
+                        <button id="swap-button" type="button"><span>Swap</span></button>
+                    </div>
+                </form>
             </div>
         </section>
     </main>
