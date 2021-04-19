@@ -14,7 +14,7 @@
             <h1>Binary to Decimal Converter</h1>
         </div>
         <div class="header-paragraph">
-            <p>Convert Binary numbers to Decimal or decimal numbers to binary. Calculation steps shown.</p>
+            <p>Convert Binary numbers to Decimal or Decimal numbers to Binary.</p>
         </div>
     </header>
     <main>
@@ -22,13 +22,17 @@
             <div class="converter-container">
                 <form id="calcForm" name="calcForm" autocomplete="off">
                     <div class="form-group">
-                        <label class="input-label" for="binary">Enter Binary Number</label>
-                        <input type="number" id="input" name="input">
+                        <label for="binary">Enter Binary Number</label>
+                        <input class="number-input" type="number" id="input" name="input">
                     </div>
                     <div class="form-group">
-                        <button id="convert-button" type="button"><span>= Convert</span></button>
-                        <button id="reset-button" type="reset"><span>x Reset</span></button>
-                        <button id="swap-button" type="button"><span>Swap</span></button>
+                        <button id="convert-button" type="button"><span>= </span>Convert</button>
+                        <button id="reset-button" type="reset"><span>x </span>Reset</button>
+                        <button id="swap-button" type="button"><span></span>Swap</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="calcResult">Decimal Result</label>
+                        <textarea name="result" id="calcResult" readonly></textarea>
                     </div>
                 </form>
             </div>
