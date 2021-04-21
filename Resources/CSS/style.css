@@ -13,18 +13,23 @@ html {
 
 body {
     font-size: 1.6rem;
-    width: 25%;
+    width: 100%;
     margin: 0 auto;
 }
 /***
 HEADER
 ***/
 header {
-
+    width: 50rem;
+    margin: 0 auto;
 }
 
-h1 {
+header h1 {
+    font-size: 2.4rem;
     margin: 2rem 0;
+}
+header p {
+    margin-bottom: 0rem;
 }
 
 /*** 
@@ -34,13 +39,12 @@ CONVERTER section
     background-color: rgb(240, 238, 220);
     border-radius: 10px;
     overflow: hidden;
-}
-.converter-container {
-    width: 90%;
-    margin: 3rem auto;
+    width: 50rem;
+    padding: 2rem;
+    margin: 2rem auto;
 }
 
-/***
+/*** 
 FORM
 ***/
 .form-group {
@@ -55,7 +59,7 @@ label {
 
 .number-input {
     width: 100%;
-    height: 3rem;
+    height: 4rem;
 }
 
 button {
@@ -68,11 +72,38 @@ button span {
     font-size: 1.5rem;
 } 
 
-
 textarea {
     width: 100%;
-    height: 5rem;
+    height: 7rem;
     resize: vertical;
 }
 
+input, textarea, button {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    padding: 3px 3px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid #DDDDDD;
+}
+   
+input:focus, textarea:focus, button:focus {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid rgba(81, 203, 238, 1);
+}
 
+/***
+MEDIA QUERIES
+***/
+@media only screen and (max-width: 550px) {
+    header {
+        width: 90%;
+    }
+    .converter-section {
+        width: 90%;
+    }
+}
